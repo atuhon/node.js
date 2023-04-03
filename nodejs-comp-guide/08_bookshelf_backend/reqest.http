@@ -1,0 +1,30 @@
+http://localhost:8080/api
+
+###
+http://localhost:8080/api/books/6429bd7770688537ed27c8
+
+###
+
+DELETE http://localhost:8080/api/books/6
+
+###
+POST http://localhost:8080/api/books
+Content-Type:application/json
+
+{
+    "title":"とある",
+    "description":"説明欄の内容です",
+    "comment":"",
+    "rating":3
+}
+###
+PATCH http://localhost:8080/api/books/6429bd7970688537ed27c88b
+Content-Type: application/json
+
+{
+   "rating":3
+}
+
+
+
+

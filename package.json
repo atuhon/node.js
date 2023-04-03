@@ -1,0 +1,10 @@
+{
+  "dependencies": {
+    "google-spreadsheet": "^3.3.0",
+    "i": "^0.3.7",
+    "is-odd": "^3.0.1",
+    "jquery": "^3.6.4",
+    "npm": "^9.6.2",
+    "webpack-cli": "^5.0.1"
+  }
+}
