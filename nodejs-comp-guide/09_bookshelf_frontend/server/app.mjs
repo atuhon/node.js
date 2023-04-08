@@ -6,6 +6,7 @@
 ・サーバを立てる
 ・別ファイルで定義した部分を呼び出す
 */
+import path from "path";
 import express from "express"
 import apiRoutes from "./api-routes/index.mjs"  //処理の順番
 import env from 'dotenv';
@@ -14,6 +15,9 @@ env.config();
 const app =express()
 const port =process.env.PORT || 8080;
 app.use(express.json())
+//import cors from "cors"
+//app.use(cors({origin: "*"//複数のサーバを使用して起動する場合、規定外のサーバでも出力できるようになる
+//}))
 //API
 app.use("/api",apiRoutes)
 app.use(function(req,res){
@@ -32,7 +36,7 @@ app.use(function(err,req,res,next){//booksから送られてきた処理
 //rootの作成　　/apiに対してapiRoutesの処理（多分）
 //サーバー
 app.listen(port,function(){
-    console.log(`Server  Start: http://localhost${port}`)
+    console.log(`Server  Start: http://localhost:${port}`)
 })
 
 /**メモ

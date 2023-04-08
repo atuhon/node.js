@@ -1,4 +1,6 @@
 
+import booksRoutes from "./books.mjs";
+
 /**
  * ここでやった事
  *・booksへのパス設定

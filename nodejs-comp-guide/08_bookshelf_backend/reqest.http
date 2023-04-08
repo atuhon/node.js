@@ -14,7 +14,7 @@ Content-Type:application/json
 {
     "title":"とある",
     "description":"説明欄の内容です",
-    "comment":"",
+    "comment":"面白い",
     "rating":3
 }
 ###
