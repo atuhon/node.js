@@ -6,3 +6,6 @@ label,
 button {
   font-size: 2rem;
 }
+img{
+  max-width: 300px;
+}
